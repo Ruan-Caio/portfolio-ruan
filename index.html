@@ -43,8 +43,16 @@ Além da programação, busco desenvolver minha visão empreendedora e minha cap
         </section>
         <section id="projetos">
     <h2>Projetos</h2>
+    <div class="project-filters" id="project-filters" role="group" aria-label="Filtrar projetos" hidden>
+        <button class="project-filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="project-filter" type="button" data-filter="site" aria-pressed="false">Sites</button>
+        <button class="project-filter" type="button" data-filter="interativo" aria-pressed="false">Interativos</button>
+        <button class="project-filter" type="button" data-filter="sistema" aria-pressed="false">Sistemas</button>
+        <button class="project-filter" type="button" data-filter="prototipo" aria-pressed="false">Protótipos</button>
+    </div>
+    <p class="project-filter-status" id="project-filter-status" aria-live="polite" hidden></p>
     <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card" data-category="sistema">
             <div class="project-card__content">
                 <p class="project-card__eyebrow">Projeto de estudo</p>
                 <h3>Sistema de cadastro e login</h3>
@@ -54,7 +62,7 @@ Além da programação, busco desenvolver minha visão empreendedora e minha cap
             </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="prototipo">
             <img class="project-card__image" src="https://raw.githubusercontent.com/Ruan-Caio/IA-NA-PR-TICA/main/NEXA.png" alt="Avatar visual do assistente virtual Nexa" loading="lazy" decoding="async">
             <div class="project-card__content">
                 <p class="project-card__eyebrow">Protótipo experimental</p>
@@ -66,7 +74,7 @@ Além da programação, busco desenvolver minha visão empreendedora e minha cap
             </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="interativo">
             <img class="project-card__image" src="https://raw.githubusercontent.com/Ruan-Caio/Hora-dia/main/manha.png" alt="Imagem de manhã usada pelo projeto Hora do Dia" loading="lazy" decoding="async">
             <div class="project-card__content">
                 <p class="project-card__eyebrow">Projeto de estudo</p>
@@ -77,7 +85,7 @@ Além da programação, busco desenvolver minha visão empreendedora e minha cap
             </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="interativo">
             <div class="project-card__content">
                 <p class="project-card__eyebrow">Exercício de estudo</p>
                 <h3>Tabuada interativa</h3>
@@ -86,7 +94,7 @@ Além da programação, busco desenvolver minha visão empreendedora e minha cap
                 <p class="project-card__links"><a class="project-card__link" href="https://github.com/Ruan-Caio/Tabuada" target="_blank" rel="noopener noreferrer">Ver repositório no GitHub ↗</a></p>
             </div>
         </article>
-        <article class="project-card">
+        <article class="project-card" data-category="site">
     <img class="project-card__image" src="https://raw.githubusercontent.com/Ruan-Caio/Cafeteria-aurora/main/logo-cafe-aurora.svg" alt="Logo do Café Aurora" loading="lazy" decoding="async">
     <div class="project-card__content">
         <p class="project-card__eyebrow">Projeto conceitual</p>
@@ -119,7 +127,9 @@ Além da programação, busco desenvolver minha visão empreendedora e minha cap
     &copy; RCD | ruan.devbr
    </p>
    </footer>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao início" hidden>↑</button>
     <script src="script.js"></script>
 </body>
 </html>
+
 
