@@ -1,0 +1,18 @@
+# Arquivos com segredos e configurações locais
+.env
+.env.*
+!.env.example
+
+# Dependências instaladas localmente
+node_modules/
+
+# Configuração local da Vercel
+.vercel/
+
+# Saídas de build, caso o projeto passe a usar uma ferramenta de build
+dist/
+build/
+
+# Arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
